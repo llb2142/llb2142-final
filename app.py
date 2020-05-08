@@ -15,6 +15,9 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return render_template("index.html")
+@app.route("/page2")
+def secondpage():
+    return render_template("page2.html")
 
 #start the server
 if __name__ == "__main__":
